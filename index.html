@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Человек и автомобиль</h1>
+
+    <form id="personCarForm">
+        <h2>Данные о человеке:</h2>
+        <label for="name">Имя:</label>
+        <input type="text" id="name" required>
+        <br>
+        <label for="age">Возраст (больше 18):</label>
+        <input type="number" id="age" required min="19">
+        <br>
+        <h2>Данные об автомобиле:</h2>
+        <label for="make">Марка автомобиля:</label>
+        <input type="text" id="make" required>
+        <br>
+        <label for="model">Модель автомобиля:</label>
+        <input type="text" id="model" required>
+        <br>
+        <button type="button" onclick="submitForm()">Сохранить данные</button>
+    </form>
+    <div class="error" id="error">
+        
+    </div>
+    <div id="result">
+        <!-- Здесь будут отображаться данные о человеке и автомобиле -->
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
